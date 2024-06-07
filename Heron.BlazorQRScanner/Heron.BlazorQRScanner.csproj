@@ -6,6 +6,26 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
     
+    <PropertyGroup>
+        <PackageId>Heron.BlazorQRScanner</PackageId>
+        <Authors>Dan Heron</Authors>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <Copyright>Copyright 2024 Dan Heron</Copyright>
+        <PackageTags>Blazor, QR Code, Components, Blazor Components, Blazor Library</PackageTags>
+        <Description>A simple QR code scanner for Blazor.</Description>
+        <PackageProjectUrl>https://github.com/danheron/Heron.BlazorQRScanner</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\LICENSE" Pack="true" Visible="false" PackagePath="" />
+    </ItemGroup>
+    
     <ItemGroup>
         <SupportedPlatform Include="browser"/>
     </ItemGroup>
