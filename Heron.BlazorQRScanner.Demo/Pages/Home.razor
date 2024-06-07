@@ -1,0 +1,22 @@
+﻿@page "/"
+
+@if (string.IsNullOrEmpty(_code))
+{
+    <Scanner CodeFound="CodeFound" />   
+}
+else
+{
+    <div>
+        Code = @_code
+    </div>
+}
+
+@code
+{
+    private string _code = string.Empty;
+
+    private void CodeFound(string code)
+    {
+        _code = code;
+    }
+}

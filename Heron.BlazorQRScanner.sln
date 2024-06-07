@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heron.BlazorQRScanner", "Heron.BlazorQRScanner\Heron.BlazorQRScanner.csproj", "{450B60BC-931A-413D-A413-E8E5AB0C897B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heron.BlazorQRScanner.Demo", "Heron.BlazorQRScanner.Demo\Heron.BlazorQRScanner.Demo.csproj", "{996AC72F-7FCF-4B01-8244-EE859847ABB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450B60BC-931A-413D-A413-E8E5AB0C897B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450B60BC-931A-413D-A413-E8E5AB0C897B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450B60BC-931A-413D-A413-E8E5AB0C897B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450B60BC-931A-413D-A413-E8E5AB0C897B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996AC72F-7FCF-4B01-8244-EE859847ABB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996AC72F-7FCF-4B01-8244-EE859847ABB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996AC72F-7FCF-4B01-8244-EE859847ABB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996AC72F-7FCF-4B01-8244-EE859847ABB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
