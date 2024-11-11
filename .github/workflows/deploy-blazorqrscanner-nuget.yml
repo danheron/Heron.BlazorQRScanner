@@ -42,6 +42,10 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 8.0.x
+          
+      - name: Build project
+        run: dotnet build -c Release
+        working-directory: './Heron.BlazorQRScanner'
 
       - name: Pack nuget package
         run: dotnet pack -c Release --output nupkgs /p:PackageVersion=${{ needs.get-version.outputs.VERSION }} /p:AssemblyVersion=${{ needs.get-version.outputs.VERSION }} /p:Version=${{ needs.get-version.outputs.VERSION }}
@@ -49,4 +53,8 @@ jobs:
 
       - name: Publish nuget package
         run: dotnet nuget push nupkgs/*.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+        working-directory: './Heron.BlazorQRScanner'
+
+      - name: Publish nuget package symbols
+        run: dotnet nuget push nupkgs/*.snupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
         working-directory: './Heron.BlazorQRScanner'
