@@ -77,7 +77,7 @@ export default class Scanner {
             const imageData = this._canvas.getImageData(0, 0, this._canvasElement.width, this._canvasElement.height);
             const code = jsQR(imageData.data, imageData.width, imageData.height);
             if (code) {
-                this._module.invokeMethod<void>("ScanResult", code.data);
+                this._module.invokeMethodAsync("ScanResult", code.data);
             }
         }
         requestAnimationFrame(() => this.tick());
